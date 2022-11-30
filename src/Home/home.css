@@ -1,0 +1,23 @@
+.sect-home {
+    padding: 40px 0px;
+    border: 1px solid black;
+    min-width: 290px;
+    width: 33%;
+    margin: 100px auto;
+    background-color: white;
+}
+
+.img-home {
+    width: 40%;
+    height: 40%;
+}
+
+.txt-home {
+    margin-top: 25px;
+    font-size: 22px;
+}
+
+.msgbox-home {
+    margin: 50px auto 0px;
+    line-height: 2em;
+}

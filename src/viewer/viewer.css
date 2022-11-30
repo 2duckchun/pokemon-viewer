@@ -1,0 +1,34 @@
+.sect-viewer {
+    width: 400px;
+    margin: 50px auto;
+    background-color: rgba(255, 99, 71, 0.5);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 15px;
+}
+
+.cards-viewer {
+    min-width: 400px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 15px;
+    background-color: ;
+}
+
+.btnbox-viewer {
+    
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.btn-viewer {
+    display: block;
+}

@@ -1,0 +1,37 @@
+.cont-header {
+    background-color: blanchedalmond;
+    padding: 25px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.txt-header {
+    flex-basis: 25%;
+    font-size: 25px;
+}
+
+.ul-header {
+    flex-basis: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.space-header {
+    flex-basis: 25%;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.li-header {
+    background-color: white;
+    border-radius: 5px;
+    border: 1px solid black;
+    padding: 10px;
+    margin: 0px 25px;
+    cursor: pointer;
+}
