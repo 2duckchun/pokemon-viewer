@@ -8,10 +8,12 @@ import Viewer from './viewer/Viewer';
 import Modal from './modal/Modal'
 import Log from './log/Log'
 
+
 function App() {
   const [modal, setModal] = useState(false)
   const [modalInfo, setModalInfo] = useState(false)
   const [log, setLog] = useState([])
+  const [saveUrl, setSaveUrl] = useState('https://pokeapi.co/api/v2/pokemon/?offset=0&limit=9')
 
   return (
     <div className="App">
@@ -19,7 +21,7 @@ function App() {
       <Routes>
         <Route path='/home' element={<Home />} />
         <Route path='/pokemon-viewer/' element={<Home />} />
-        <Route path='/viewer' element={<Viewer setModal={setModal} log={log} setLog={setLog} setModalInfo={setModalInfo}/>} />
+        <Route path='/viewer' element={<Viewer setModal={setModal} log={log} setLog={setLog} setModalInfo={setModalInfo} saveUrl={saveUrl} setSaveUrl={setSaveUrl} />} />
         <Route path='/log' element={<Log log={log} setLog={setLog} />} />
       </Routes>
       {modal === true ? <Modal setModal={setModal} modalInfo={modalInfo} /> : null}

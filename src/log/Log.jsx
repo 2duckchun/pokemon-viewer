@@ -21,7 +21,7 @@ let LogSection = styled.section`
     }
     li {
       display: flex;
-      justify-content: center;
+      justify-content: space-evenly;
       align-items: center;
       border: 1px solid black;
       border-radius: 5px;
@@ -36,7 +36,7 @@ export default function Log({log, setLog}) {
       <h2>Log</h2>
       <ul>
         {log.map((e, i) => {
-          return <List logDate={e.logDate} pokeImg={e.pokeImg} pokeName={e.pokeName} />
+          return <List logDate={e.logDate} pokeImg={e.pokeImg} pokeName={e.pokeName} key={i} />
         })}
       </ul>
     </LogSection>
