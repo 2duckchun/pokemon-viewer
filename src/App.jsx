@@ -17,7 +17,8 @@ function App() {
     <div className="App">
       <Header />
       <Routes>
-        <Route path='/' element={<Home />} />
+        <Route path='/home' element={<Home />} />
+        <Route path='/pokemon-viewer/' element={<Home />} />
         <Route path='/viewer' element={<Viewer setModal={setModal} log={log} setLog={setLog} setModalInfo={setModalInfo}/>} />
         <Route path='/log' element={<Log log={log} setLog={setLog} />} />
       </Routes>
